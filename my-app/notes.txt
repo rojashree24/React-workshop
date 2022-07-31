@@ -8,3 +8,9 @@ hooks: to join functional components
 useState - to store, it is one of the hooks
 
 npm i react-router-dom
+ 
+ for reload -> useEffect
+lifecycle of componenet
+mount -> componenet will be updated -> unmounted
+
+[]-> dependency array
