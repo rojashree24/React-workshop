@@ -1,14 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import './login.css';
 import TextInput from '../TextInput/TextInput';
 import CustomButton from "../CustomButton/CustomButton";
+import HeaderBar from "../HeaderBar/HeaderBar";
 
-const Login=({name})=>(
+const Login=({name})=>{
 
-    
-    
+    const [userName,setUserName]=useState(""); //statevariable statefunction
+    const [password,setPassword]=useState("");
+
+    return(
     <>
-        
+            <HeaderBar />
             <div className="main-container login-page">
         <div className="login-background">
         </div>
@@ -20,10 +23,14 @@ const Login=({name})=>(
                 <h1>Sign In</h1>
                 <div className="form-field">
                     
-                    <input type="text" class="username" placeholder="Username" value="" />
+                  <TextInput type="text" className="username" placeholder="Username" value={userName} onChange={(event)=>{
+                    setUserName(event.target.value)
+                  }}/>
                 </div>
                 <div className="form-field">
-                    <input type="password" class="password" placeholder="Password" value="" />
+                    <TextInput type="password" className="password" placeholder="Password" value={password} onChange={(event)=>{
+                        setPassword(event.target.value)
+                    }} />
                 </div>
                 <div className="form-field">
                     <button class="app-button" type="submit">LOGIN</button>
@@ -43,6 +50,7 @@ const Login=({name})=>(
             type="submit"
             value="Login" /> */}
     </>
-);
+    )
+        };
 
 export default Login;

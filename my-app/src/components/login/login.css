@@ -30,11 +30,12 @@ img {
 .login-form {
     flex-basis: 25%;
     padding: 20px;
+    
 }
 
 .app-logo {
-    margin: 0 auto;
-    width: 60%;
+    margin: -41px auto;
+    width: 54%;
 }
 
 .login-form {

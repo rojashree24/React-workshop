@@ -1,0 +1,22 @@
+.child{
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+.header{
+    width: 100vw;
+    background-color: #bd0310;
+    color: white;
+}
+.header-content{
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+img{
+    border-radius: 50%;
+}
+.header-logo{
+    height: 50px;
+}
